@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Hanu Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/styless.min.css" rel="stylesheet">
+    <script src="js/canvasjs.min.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("techSkills", {
+                backgroundColor: "transparent",
+                theme: "theme2",//theme1
+                animationEnabled: true,   // change to true
+                data: [
+                    {
+                        // Change type to "bar", "area", "spline", "pie",etc.
+                        type: "pie",
+                        dataPoints: [
+                            { label: "Core Java",  y: 30  },
+                            { label: "HTML5 & CSS3",  y: 100  },
+                            { label: "Javascript", y: 70  },
+                            { label: "Jquery", y: 50  },
+                            { label: "Angular Js",  y: 60  }
+
+                        ]
+                    }
+                ]
+            });
+            chart.render();
+        }
+    </script>
+<style>
+	.my-container {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap :wrap; 
+        
+        width:  100%;
+        background-color: white;
+    }
+
+    .container-item {
+
+        height: 300px;
+        
+    }
+	
+		
+    .first {
+       background-color: #b3b3b3;
+	   width: 50%;
+
+    }
+    .second {
+      background-color: #b3b3b3; 
+	  width:50%;
+    }
+	
+</style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-bolt" aria-hidden="true"></i> <span class="light"> My Portfolio </span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">HANU's PORTFOLIO</h1>
+                        <p class="intro-text">You gonna see everything about myself  </p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>Heyaaaa, This is Sai Hanuman Prasad. He he he I know it takes some time to pronounce the whole thing, so you can call me as Hanu.
+				I am a B.tech Graduate who is seriously looking for a cool job as UI developer and I am very inquisitive in learning new things.
+				Browsing Quora, Going through vocabulary, Mobile Photography, Photo Editing, listening to songs, are my Hobbies <br>
+				 Apart from these I'm a big Movie Fanatic and a Moviegoer. 
+				</p>
+			</div> 
+        </div>
+    </section>
+	
+	
+	<!-- Skill Section -->
+	<section id ="skills" class="container content-section text-center">
+	<h2> SKILLS </h2>
+		<div class ="my-container">
+			<div class="container-item first">
+
+                <div id="techSkills">
+
+                </div>
+
+				<!--<p> <strong> Technical Skills </strong>
+				    
+					<p> 
+					  HTML5 & CSS3 <br>
+					  JavaScript <br>
+					  Angular JS <br>
+					  Core JAVA </p>
+				</p>-->
+				</div>
+			<div class="container-item second">		 
+			    <p> <strong> Non-Technical skills </strong>
+				<p>  Inquisitive Learner <br>
+				     Communication skills <br>
+					 Adoptability <br>
+					 Hardworking <br>
+					</p>
+					</p>
+					</div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center" >
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Hello people !! Hope you got a basic information about me.</h2>
+                <h3>Feel free to E-mail me at</h3> 
+				<a class="custHyper" style="font-size: 20px" href="mailto:saihanuman73@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                 &nbsp;   saihanuman73@gmail.com </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+      <div class="col-md-12 col-sm-12 col-xs-12 lowSpace padTopSpace" style="background-color: #000;/*min-height: 39px;padding-top: 1%;*/" >
+          <div class="col-md-4 col-sm-4 hidden-xs" style="color:#dbdbdb">
+              <h4> <i class="fa fa-phone-square" aria-hidden="true"></i> 8121908407</h4>
+          </div>
+          <div class="col-xs-6 col-xs-offset-3 hidden-lg hidden-sm hidden-md" style="color:#dbdbdb">
+              <h4> <i class="fa fa-phone-square" aria-hidden="true"></i> 8121908407</h4>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12" style="color:#dbdbdb">
+              <h4 align="center">Sai Hanuman &copy; 2017 </h4> </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 pull-right" style="text-align: right;margin-top: 0.8%;">
+              <div class="col-md-7 col-md-offset-6 col-sm-7 col-sm-offset-6 col-xs-12">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                      <a href="mailto:saihanuman73@gmail.com" class="customHover"> <i class="fa fa-envelope" aria-hidden="true"> </i> </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                      <a href="https://www.facebook.com/profile.php?id=100004930683412" target="_blank" class="customHover"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                      <a href="https://www.linkedin.com/in/sai-hanuman-8a0b62104/" target="_blank" class="customHover">  <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                      <a href="https://www.instagram.com/hanu73/" target="_blank" class="customHover"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+	<!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+    
+	<!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	
+	 <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+
+</body>
+
+</html>
